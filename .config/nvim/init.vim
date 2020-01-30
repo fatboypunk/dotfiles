@@ -113,7 +113,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'rizzatti/dash.vim'
   :nmap <silent> <leader>da <Plug>DashSearch
 
-  Plug 'wsdjeg/vim-fetch'
+  Plug 'bogado/file-line'
 
   Plug 'vim-scripts/indentpython.vim'
 
