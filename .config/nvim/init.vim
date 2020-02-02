@@ -58,7 +58,7 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'roxma/vim-hug-neovim-rpc'
   endif
 
-  " let g:deoplete#enable_at_startup = 1
+  let g:deoplete#enable_at_startup = 1
   inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 
   Plug 'mhinz/vim-mix-format'
