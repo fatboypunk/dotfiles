@@ -130,6 +130,8 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'soli/prolog-vim'
 
   Plug 'KabbAmine/vCoolor.vim'
+
+  Plug 'blueyed/vim-diminactive'
 call plug#end()
 
 syntax enable
