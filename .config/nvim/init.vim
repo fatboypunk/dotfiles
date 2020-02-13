@@ -45,9 +45,6 @@ map <leader>9 :vertical resize +4<CR>
 " vertical decrease pane by 2
 nmap <leader>0 :vertical resize -4<CR>
 
-let g:mix_format_on_save = 1
-let g:mix_format_silent_errors = 1
-
 call plug#begin('~/.config/nvim/plugged')
 
   if has('nvim')
