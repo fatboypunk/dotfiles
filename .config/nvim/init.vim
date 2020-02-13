@@ -173,3 +173,8 @@ function! OpenViewOrTemplate(side)
     execute a:side . fnamemodify(expand('%:p:h') . '/template.html.eex', '%:p:h')
   endif
 endfunction
+
+function! RunTerminalCommand(command)
+  execute 'botright' . ' new'
+  call termopen(a:command)
+endfunction

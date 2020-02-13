@@ -1,5 +1,5 @@
-nmap <leader>r :! mix run script.exs <CR>
-nmap <leader>dg :! mix deps.get <CR>
+nmap <leader>r :call RunTerminalCommand('mix run script.exs') <CR>
+nmap <leader>dg :call RunTerminalCommand('mix deps.get') <CR>
 
 " let @i = => @i will now run this command
 " yiw => yank the current word,
