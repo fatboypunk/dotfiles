@@ -130,6 +130,9 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'KabbAmine/vCoolor.vim'
 
   Plug 'blueyed/vim-diminactive'
+
+  Plug 'vimwiki/vimwiki'
+    let g:vimwiki_list = [{'path': '~/Projects/wiki/'}]
 call plug#end()
 
 syntax enable
