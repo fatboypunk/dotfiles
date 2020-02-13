@@ -83,10 +83,11 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'janko-m/vim-test'
 
   if (&ft!='tex')
-    nmap <silent> <leader>t :TestNearest<CR>
-    nmap <silent> <leader>T :TestFile<CR>
-    nmap <silent> <leader>a :TestSuite<CR>
-    nmap <silent> <leader>l :TestLast<CR>
+
+    nmap <silent> <leader>t :TestNearest<CR><C-\><C-n>
+    nmap <silent> <leader>T :TestFile<CR><C-\><C-n>
+    nmap <silent> <leader>a :TestSuite<CR><C-\><C-n>
+    nmap <silent> <leader>l :TestLast<CR><C-\><C-n>
     nmap <silent> <leader>g :TestVisit<CR>
     let test#strategy = "neovim"
     let g:test#preserve_screen = 1
