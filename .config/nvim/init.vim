@@ -133,6 +133,8 @@ call plug#begin('~/.config/nvim/plugged')
 
   Plug 'vimwiki/vimwiki'
     let g:vimwiki_list = [{'path': '~/Projects/wiki/'}]
+
+  Plug 'arp242/auto_mkdir2.vim'
 call plug#end()
 
 syntax enable
