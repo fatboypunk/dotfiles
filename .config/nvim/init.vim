@@ -177,4 +177,8 @@ endfunction
 function! RunTerminalCommand(command)
   execute 'botright' . ' new'
   call termopen(a:command)
+  au BufLeave <buffer> wincmd p
+  nnoremap <buffer> <Enter> :q<CR>
+  redraw
+  echo "Press <Enter> to exit test runner terminal (<Ctrl-C> first if command is still running)"
 endfunction
