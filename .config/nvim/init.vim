@@ -81,6 +81,7 @@ call plug#begin('~/.config/nvim/plugged')
 
   Plug 'tpope/vim-dispatch'
   Plug 'janko-m/vim-test'
+  Plug 'vim-latex/vim-latex'
 
   if (&ft!='tex')
 
