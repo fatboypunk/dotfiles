@@ -185,3 +185,6 @@ function! RunTerminalCommand(command)
   redraw
   echo "Press <Enter> to exit test runner terminal (<Ctrl-C> first if command is still running)"
 endfunction
+
+" use prolog syntax instead of perl for pl
+let g:filetype_pl="prolog"
