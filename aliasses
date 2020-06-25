@@ -1,3 +1,15 @@
 git_remove_locals () {
   git branch --merged | grep -v "\*" | xargs -n 1 git branch -D;
 }
+
+driveby() {
+  lsof -i tcp:$1 | awk 'NR!=1 {print $2}' | xargs kill
+  printf "Killed everything on port $1\n"
+}
+
+alias be="bundle exec"
+alias rr="rails restart"
+alias detroit="cd ~/Projects/defacto/detroit/"
+alias learningspaces="cd ~/Projects/defacto/learningspaces/"
+alias dotfiles="cd ~/Projects/dotfiles"
+alias devrain="cd ~/Projects/devrain"
