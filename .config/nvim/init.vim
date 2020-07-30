@@ -103,8 +103,9 @@ call plug#begin('~/.config/nvim/plugged')
   Plug '/usr/local/opt/fzf'
   Plug 'junegunn/fzf.vim'
 
-  Plug 'wakatime/vim-wakatime'
+  " Plug 'wakatime/vim-wakatime'
 
+  Plug 'mhinz/neovim-remote'
   Plug 'lervag/vimtex'
 
   Plug 'vim-airline/vim-airline'
