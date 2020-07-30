@@ -137,6 +137,10 @@ call plug#begin('~/.config/nvim/plugged')
     let g:vimwiki_list = [{'path': '~/Projects/wiki/'}]
 
   Plug 'arp242/auto_mkdir2.vim'
+
+  Plug 'dense-analysis/ale'
+  let g:ale_fixers = { 'scss': ['stylelint'], 'javascript': ['eslint'] }
+  let g:ale_fix_on_save = 1
 call plug#end()
 
 syntax enable
@@ -189,3 +193,4 @@ endfunction
 
 " use prolog syntax instead of perl for pl
 let g:filetype_pl="prolog"
+nnoremap <leader><leader> :source $MYVIMRC<CR>
