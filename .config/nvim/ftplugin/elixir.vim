@@ -1,3 +1,6 @@
+" let b:ale_fixers = ['mix_format']
+" let b:ale_linters = ['credo']
+
 nmap <leader>r :call RunTerminalCommand('mix run script.exs') <CR>
 nmap <leader>dg :call RunTerminalCommand('mix deps.get') <CR>
 
