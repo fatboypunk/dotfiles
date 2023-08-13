@@ -1,0 +1,13 @@
+-- local elixir = require("elixir")
+-- elixir.setup({
+--   --  here we specify the path we built our elixir-ls,
+--   --  here we setup this in home directory,
+--   --  make sure you are pointing to right path
+--   cmd = { "/home/marcel/.elixir-ls/release/language_server.sh" },
+--   settings = elixir.settings({
+--     dialyzerEnabled = true,
+--     fetchDeps = false,
+--     enableTestLenses = false,
+--     suggestSpecs = false,
+--   }),
+-- })
