@@ -7,9 +7,23 @@ driveby() {
   printf "Killed everything on port $1\n"
 }
 
-alias be="bundle exec"
+alias be="bundle exec "
+alias bookrec="cd ~/Projects/book_rec/"
+alias devrain="cd ~/Projects/devrain-new"
+alias dotfiles="cd ~/Projects/dotfiles"
+alias trabit="cd ~/Projects/trabit"
+alias projects="cd ~/Projects"
+alias curltime="curl -w \"@$HOME/.curl-format.txt\" -o /dev/null -s "
+alias curlbench=" for i in {1..10}; curl -s -w "%{time_total}\n" -o /dev/null http://localhost:3000/api/v3/secrets"
+
 alias rr="rails restart"
+
+alias tilig-api="cd ~/Projects/tilig/tilig-packages/api"
+alias tilig-p="cd ~/Projects/tilig/tilig-packages"
+alias tilig-webapp="cd ~/Projects/tilig/tilig-packages/webapp"
+alias tilig="cd ~/Projects/tilig"
+alias ttilig="cd ~/Projects/tilig/tilig"
+
+alias defacto="cd ~/Projects/defacto/"
 alias detroit="cd ~/Projects/defacto/detroit/"
 alias learningspaces="cd ~/Projects/defacto/learningspaces/"
-alias dotfiles="cd ~/Projects/dotfiles"
-alias devrain="cd ~/Projects/devrain"

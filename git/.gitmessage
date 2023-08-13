@@ -9,3 +9,16 @@ This commit:
 - [does X]
 - [does Y]
 - [does Z]
+
+Changelog: <action>
+
+# The Changelog trailer accepts the following values:
+#
+#  * `added`: New feature
+#  * `fixed`: Bug fix
+#  * `changed`: Feature change
+#  * `deprecated`: New deprecation
+#  * `removed`: Feature removal
+#  * `security`: Security fix
+#  * `performance`: Performance improvement
+#  * `other`: Other
