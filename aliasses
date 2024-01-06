@@ -7,6 +7,8 @@ driveby() {
   printf "Killed everything on port $1\n"
 }
 
+alias nvimconfig="cd ~/.config/nvim/"
+alias vimconfig="nvimconfig"
 alias be="bundle exec "
 alias bookrec="cd ~/Projects/book_rec/"
 alias devrain="cd ~/Projects/devrain-new"
@@ -17,6 +19,13 @@ alias curltime="curl -w \"@$HOME/.curl-format.txt\" -o /dev/null -s "
 alias curlbench=" for i in {1..10}; curl -s -w "%{time_total}\n" -o /dev/null http://localhost:3000/api/v3/secrets"
 
 alias rr="rails restart"
+
+alias wuunder="cd ~/Projects/wuunder/"
+alias wwuunder="cd ~/Projects/wuunder/wuunder/"
+alias wfin="cd ~/Projects/wuunder/finance/"
+alias wfinance="cd ~/Projects/wuunder/finance/"
+alias wtak="cd ~/Projects/wuunder/takusan/"
+alias wtakusan="cd ~/Projects/wuunder/takusan/"
 
 alias tilig-api="cd ~/Projects/tilig/tilig-packages/api"
 alias tilig-p="cd ~/Projects/tilig/tilig-packages"
