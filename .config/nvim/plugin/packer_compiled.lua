@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/Users/marcel/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?.lua;/Users/marcel/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?/init.lua;/Users/marcel/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?.lua;/Users/marcel/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/Users/marcel/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/lua/5.1/?.so"
+local package_path_str = "/Users/marcel/.cache/nvim/packer_hererocks/2.1.1700008891/share/lua/5.1/?.lua;/Users/marcel/.cache/nvim/packer_hererocks/2.1.1700008891/share/lua/5.1/?/init.lua;/Users/marcel/.cache/nvim/packer_hererocks/2.1.1700008891/lib/luarocks/rocks-5.1/?.lua;/Users/marcel/.cache/nvim/packer_hererocks/2.1.1700008891/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/Users/marcel/.cache/nvim/packer_hererocks/2.1.1700008891/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -140,16 +140,15 @@ _G.packer_plugins = {
     path = "/Users/marcel/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
+  ["material.nvim"] = {
+    loaded = true,
+    path = "/Users/marcel/.local/share/nvim/site/pack/packer/start/material.nvim",
+    url = "https://github.com/marko-cerovac/material.nvim"
+  },
   ["mkdir.nvim"] = {
     loaded = true,
     path = "/Users/marcel/.local/share/nvim/site/pack/packer/start/mkdir.nvim",
     url = "https://github.com/jghauser/mkdir.nvim"
-  },
-  ["monokai-pro.nvim"] = {
-    config = { "\27LJ\2\n;\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\28colorscheme monokai-pro\bcmd\bvim\0" },
-    loaded = true,
-    path = "/Users/marcel/.local/share/nvim/site/pack/packer/start/monokai-pro.nvim",
-    url = "https://github.com/loctvl842/monokai-pro.nvim"
   },
   ["nvim-cmp"] = {
     loaded = true,
@@ -207,6 +206,11 @@ _G.packer_plugins = {
     path = "/Users/marcel/.local/share/nvim/site/pack/packer/start/vim-dispatch",
     url = "https://github.com/tpope/vim-dispatch"
   },
+  ["vim-fetch"] = {
+    loaded = true,
+    path = "/Users/marcel/.local/share/nvim/site/pack/packer/start/vim-fetch",
+    url = "https://github.com/wsdjeg/vim-fetch"
+  },
   ["vim-fugitive"] = {
     loaded = true,
     path = "/Users/marcel/.local/share/nvim/site/pack/packer/start/vim-fugitive",
@@ -216,6 +220,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/marcel/.local/share/nvim/site/pack/packer/start/vim-rename-file",
     url = "https://github.com/pbrisbin/vim-rename-file"
+  },
+  ["vim-strip-trailing-whitespace"] = {
+    loaded = true,
+    path = "/Users/marcel/.local/share/nvim/site/pack/packer/start/vim-strip-trailing-whitespace",
+    url = "https://github.com/axelf4/vim-strip-trailing-whitespace"
   },
   ["vim-test"] = {
     loaded = true,
@@ -233,10 +242,6 @@ time([[Config for trouble.nvim]], false)
 time([[Config for Comment.nvim]], true)
 try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fComment\frequire\0", "config", "Comment.nvim")
 time([[Config for Comment.nvim]], false)
--- Config for: monokai-pro.nvim
-time([[Config for monokai-pro.nvim]], true)
-try_loadstring("\27LJ\2\n;\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\28colorscheme monokai-pro\bcmd\bvim\0", "config", "monokai-pro.nvim")
-time([[Config for monokai-pro.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

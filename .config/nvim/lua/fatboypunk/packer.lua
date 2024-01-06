@@ -3,17 +3,23 @@ vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
+  use 'nvim-lua/plenary.nvim'
   use {
-    'nvim-telescope/telescope.nvim', tag = '0.1.1',
+    'nvim-telescope/telescope.nvim',
     -- or                            , branch = '0.1.x',
     requires = { { 'nvim-lua/plenary.nvim' } }
   }
-  use {
-    "loctvl842/monokai-pro.nvim",
-    config = function()
-      vim.cmd('colorscheme monokai-pro')
-    end
-  }
+  -- use "Tsuzat/NeoSolarized.nvim"
+
+
+
+  use "marko-cerovac/material.nvim"
+  -- use {
+  --   "loctvl842/monokai-pro.nvim",
+  --   config = function()
+  --     vim.cmd('colorscheme monokai-pro')
+  --   end
+  -- }
 
   use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
   use('nvim-treesitter/playground')
@@ -67,4 +73,8 @@ return require('packer').startup(function(use)
   -- use { 'fatboypunk/vim-mix-format', branch = 'marcel/remove-check' }
   use { 'hrsh7th/nvim-cmp' }
   use 'mfussenegger/nvim-dap'
+  use 'wsdjeg/vim-fetch'
+
+  -- whitespaces
+  use 'axelf4/vim-strip-trailing-whitespace'
 end)
