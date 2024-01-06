@@ -17,7 +17,7 @@
   rhom = reset --hard origin/master
   romn = rebase origin/main
   rhomn = reset --hard origin/main
-  fp = fetch -p
+  fp = fetch -p --no-tags
   am = commit --amend
   amend = commit --amend
 [commit]
